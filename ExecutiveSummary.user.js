@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        ExecutiveSummary
 // @namespace   http://fluidapp.com
-// @description What does this do?
+// @description Adds the ability to add specific messages to another campfire room, as an Executive Summary of what you're talking about in the current room.
 // @include     *
 // @author      Dave Giunta
 // ==/UserScript==
