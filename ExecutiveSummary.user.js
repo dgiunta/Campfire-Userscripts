@@ -51,7 +51,7 @@
               backgroundColor: '#666',
               color: '#ccc'
             })
-            .insert("Send to Executive Summary Room")
+            .insert("ES &rarr;")
             .observe('click', function(e) {
               e.stop();
               var message = this.next('div').innerHTML;
@@ -154,6 +154,7 @@
         try {
           messages = this.insertMessages_without_es.apply(this, arguments);
           messages.each(function(message) {
+            if (message.hasClass("advertisement_message")) { message.element.remove(); };
             ExecutiveSummary.attach_to_row(message.element);
           });
 
